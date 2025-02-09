@@ -100,6 +100,8 @@ line-height: 1.2;
   font-size: 26px;
   color: #FFFFFF;
   text-transform: uppercase;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .top__button:hover {
@@ -128,10 +130,13 @@ line-height: 1.2;
   background-repeat: no-repeat;
   height: 97px;
   width: 97px;
+
+  transition: background-image 0.2s ease-in-out;
 }
 
 .top__element:hover {
   background-image: url(./assets/images/down-hover.svg);
+  transition: background-image 0.2s ease-in-out;
 }
 
 .top__element:active {

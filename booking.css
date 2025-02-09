@@ -85,6 +85,8 @@
   text-transform: uppercase;
 
   cursor: pointer;
+
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .booking__input-label:hover {
@@ -210,6 +212,7 @@
 
 .form__input--tel {
   border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
 }
 
 .form__input--tel:focus {
@@ -234,6 +237,8 @@
   font-weight: 700;
   line-height: 1.27;
   text-transform: uppercase;
+
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .form__button:hover {

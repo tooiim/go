@@ -45,6 +45,8 @@
   color: #FFFFFF;
   font-size: 22px;
   text-transform: uppercase;
+
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .header__button:hover {
