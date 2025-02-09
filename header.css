@@ -1,0 +1,65 @@
+.header {
+  padding-top: 30px;
+  margin-bottom: 58px;
+}
+
+.header__nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 96px;
+}
+
+
+.header__list {
+  display: flex;
+  align-content: center;
+  margin-right: auto;
+}
+
+.header__list-item {
+  margin-right: 40px;
+}
+
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+.header__list-link {
+  font-size: 22px;
+  line-height: 2.27;
+  text-transform: uppercase;
+}
+
+.header__button {
+  width: 280px;
+  height: 55px;
+
+  border-radius: 10px;
+  border: 3px solid #CD06FF;
+  background-color: transparent;
+  
+  color: #FFFFFF;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.header__button:hover {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+
+}
+
+.header__button:active {
+  background-color: #640aa3;
+  border: 1px solid #000;
+
+}
+
+.header__button:focus {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+}

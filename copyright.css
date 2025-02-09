@@ -1,0 +1,13 @@
+.copyright {
+  font-size: 14px;
+}
+
+.copyright__author {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.author__email {
+  font-size: 14px;
+  color: #fff;
+}

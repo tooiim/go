@@ -1,0 +1,44 @@
+.review {
+  margin-bottom: 50px;
+}
+
+.review__list {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.review__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.review__image {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.review__img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review__img--top {
+  object-position: top;
+  margin-bottom: 10px;
+}
+
+.review__name {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.review__text {
+  display: inline-block;
+  max-width: 540px;
+  vertical-align: top;
+  padding-top: 100px;
+}

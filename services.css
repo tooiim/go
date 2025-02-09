@@ -1,0 +1,37 @@
+.services {
+  margin-bottom: 70px;
+}
+
+.services__title {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.services__item {
+  position: relative;
+}
+
+.services__link {
+  display: inline-block;
+}
+
+.services__img {
+  width: 380px;
+  height: 228px;
+  object-fit: cover;
+}
+
+.services__name {
+  position: absolute;
+  left: 40px;
+  bottom: 34px;
+  font-size: 20px;
+  font-weight: 700;
+}

@@ -1,0 +1,60 @@
+.halls {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.halls__list {
+  list-style: none;
+  font-size: 0;
+}
+.halls__item {
+  display: inline-block;
+  width: calc(50% - 10px);
+  height: 349px;
+  margin-right: 20px;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.halls__item--one {
+  background-image: url(./assets/images/halls/1.jpg);
+  object-position: left top;
+  margin-bottom: 20px;
+}
+
+.halls__item--two {
+  background-image: url(./assets/images/halls/2.jpg);
+  object-position: right top;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.halls__item--tree {
+  background-image: url(./assets/images/halls/3.jpg);
+  object-position: left bottom;
+}
+.halls__item--four {
+  background-image: url(./assets/images/halls/4.jpg);
+  object-position: right bottom;
+  margin-right: 0;
+}
+
+
+.halls__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 135px;
+  padding-bottom: 135px;
+
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}

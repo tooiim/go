@@ -1,0 +1,258 @@
+.booking {
+  background: #440F51;
+}
+
+.booking {
+  background: #440f51;
+  padding: 80px 0;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.form__fieldset-item:last-child {
+  margin-bottom: 0;
+}
+
+.form__fieldset-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.form__fieldset-group .form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset-group .form__legend {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 24px;
+}
+
+.form__fieldset-group [type="radio"] {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.form__fieldset-group [type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.form__fieldset-group .form__inputlabel {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.form__fieldset-buttons .form__input {
+  width: 0;
+}
+
+.form__fieldset-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.booking__input-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+
+  background-color: #fff;
+  color: #000;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.booking__input-label:hover {
+  border: 3px solid #640aa3;
+  background-color: #eadeed;
+
+}
+
+
+.booking__input-label:active {
+  border: 3px solid #fff;
+  background-color: #6c0287;
+
+  color: #fff;
+}
+
+.booking__input-label:focus {
+  border: 3px solid #640aa3;
+  background-color: #fff;
+}
+
+.form__legend-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.form__input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__inputs-date-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 32px;
+}
+
+.form__inputs-wrapper {
+  width: 300px;
+}
+
+.form__input-wrapper {
+  margin-bottom: 36px;
+  width: 300px;
+}
+
+.form__input-wrapper input {
+  height: 52px;
+  width: 100%;
+}
+
+.form__input-label-small {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form__input-select {
+  position: relative;
+}
+
+.form__input-select-small {
+  margin-bottom: 56px;
+}
+
+.form__input-select:last-of-type {
+  width: 300px;
+}
+
+.form__input-select:last-of-type input {
+  width: 100%;
+}
+
+
+.form__input-select {
+  position: relative;
+}
+
+.form__input-select input {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.form__input-label--center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.form__input-label-text {
+  color: #211e1e;
+  font-size: 18px;
+
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.form__input-label-img {
+  display: inline-block;
+  width: 21px;
+  height: 15px;
+}
+
+
+.form__input--small {
+  width: 134px;
+}
+
+.form__input--tel {
+  border: 2px solid transparent;
+}
+
+.form__input--tel:focus {
+  border: 2px solid #cd06ff;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+
+  background: #fff;
+  color: #6c0287;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.27;
+  text-transform: uppercase;
+}
+
+.form__button:hover {
+  border: 3px solid #6c0287;
+  background-color: #eadeed;
+
+  color: #6c0287;
+}
+
+.form__button:active {
+  border: 3px solid #eadeed;
+  background-color: #eadeed;
+}
+
+.form__button:focus {
+  border: 3px solid #6c0287;
+  background-color: #fff;
+}
+
+.form__input:focus {
+  outline: 1px solid #cd06ff;
+}
