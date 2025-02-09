@@ -55,6 +55,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }

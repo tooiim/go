@@ -13,7 +13,6 @@
   margin-right: 96px;
 }
 
-
 .header__list {
   display: flex;
   align-content: center;
@@ -39,7 +38,7 @@
   height: 55px;
 
   border-radius: 10px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--color-main);
   background-color: transparent;
   
   color: #FFFFFF;
@@ -50,18 +49,18 @@
 }
 
 .header__button:hover {
-  background-color: #6c0287;
-  border: 3px solid #6c0287;
+  background-color: var(--color-lightpurple);
+  border: 3px solid var(--color-lightpurple);
 
 }
 
 .header__button:active {
-  background-color: #640aa3;
+  background-color: var(--color-purple-hover);
   border: 1px solid #000;
 
 }
 
 .header__button:focus {
-  background-color: #6c0287;
-  border: 3px solid #6c0287;
+  background-color: var(--color-purple-hover);
+  border: 3px solid var(--color-purple-hover);
 }

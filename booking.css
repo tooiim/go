@@ -1,9 +1,5 @@
 .booking {
-  background: #440F51;
-}
-
-.booking {
-  background: #440f51;
+  background: var(--color-purple);
   padding: 80px 0;
 }
 
@@ -76,7 +72,7 @@
   height: 55px;
   border-radius: 8px;
 
-  background-color: #fff;
+  background-color: var(--color-white);
   color: #000;
 
   font-size: 30px;
@@ -90,7 +86,7 @@
 }
 
 .booking__input-label:hover {
-  border: 3px solid #640aa3;
+  border: 3px solid var(--color-purple-hover);
   background-color: #eadeed;
 
 }
@@ -98,13 +94,13 @@
 
 .booking__input-label:active {
   border: 3px solid #fff;
-  background-color: #6c0287;
+  background-color: var(--color-lightpurple);
 
-  color: #fff;
+  color: var(--color-white);
 }
 
 .booking__input-label:focus {
-  border: 3px solid #640aa3;
+  border: 3px solid var(--color-purple-active);
   background-color: #fff;
 }
 
@@ -216,7 +212,7 @@
 }
 
 .form__input--tel:focus {
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--color-main);
 }
 
 .form__button {
@@ -231,7 +227,7 @@
   border-radius: 10px;
 
   background: #fff;
-  color: #6c0287;
+  color: var(--color-lightpurple);
 
   font-size: 22px;
   font-weight: 700;
@@ -242,22 +238,22 @@
 }
 
 .form__button:hover {
-  border: 3px solid #6c0287;
-  background-color: #eadeed;
+  border: 3px solid var(--color-lightpurple);
+  background-color: var(--color-light-hover);
 
   color: #6c0287;
 }
 
 .form__button:active {
-  border: 3px solid #eadeed;
-  background-color: #eadeed;
+  border: 3px solid var(--color-light-hover);
+  background-color: var(--color-light-hover);
 }
 
 .form__button:focus {
-  border: 3px solid #6c0287;
-  background-color: #fff;
+  border: 3px solid var(--color-lightpurple);
+  background-color: var(--color-white);
 }
 
 .form__input:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-main);
 }

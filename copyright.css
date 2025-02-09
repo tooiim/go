@@ -9,5 +9,5 @@
 }
 .author__email {
   font-size: 14px;
-  color: #fff;
+  color: var(--color-white);
 }

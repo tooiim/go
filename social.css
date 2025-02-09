@@ -12,6 +12,6 @@
 }
 
 .social__link {
-  color: #FFFFFF;
+  color: var(--color-white);
   text-decoration: none;
 }

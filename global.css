@@ -9,6 +9,15 @@
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+
+  --color-main: #cd06ff;
+  --color-purple: #440f51;
+  --color-lightpurple: #6c0287;
+  --color-purple-hover: #840aa3;
+  --color-purple-active: #640aa3;
+  --color-light-hover: #eadeed;
+  --color-dark: #1b1a1b;
+  --color-white: #fff;
 }
 
 html {

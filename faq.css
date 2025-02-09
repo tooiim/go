@@ -3,7 +3,7 @@
 }
 
 .faq__item {
-  background-color: #fff;
+  background-color: var(--color-white);
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
@@ -26,7 +26,7 @@ transition: background-image 0.2s ease-in-out;
 }
 
 .faq__item:nth-child(2n) {
-background-color: #440F51;
+background-color: var(--color-purple);
 color: #fff;
 
 transition: background-image 0.2s ease-in-out;
