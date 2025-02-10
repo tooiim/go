@@ -1,6 +1,5 @@
 .halls {
   text-align: center;
-  margin-bottom: 50px;
 }
 .halls__list {
   list-style: none;
@@ -57,4 +56,21 @@
   text-align: center;
   color: var(--color-white);
   text-decoration: none;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.halls__link:hover {
+  color: var(--color-purple-hover);
+
+}
+
+.halls__link:active {
+  color: var(--color-purple-active);
+
+}
+
+.halls__link:focus {
+  color: var(--color-lightpurple);
+
 }

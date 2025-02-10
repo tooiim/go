@@ -1,26 +1,26 @@
 .header {
   padding-top: 30px;
-  margin-bottom: 58px;
+  padding-bottom: 50px;
 }
 
 .header__nav {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
+  gap: 96px;
 }
 
 .header__logo {
-  margin-right: 96px;
+
 }
 
 .header__list {
   display: flex;
   align-content: center;
-  margin-right: auto;
+  gap: 40px;
 }
 
 .header__list-item {
-  margin-right: 40px;
 }
 
 .header__list-item:last-child {
@@ -31,6 +31,23 @@
   font-size: 22px;
   line-height: 2.27;
   text-transform: uppercase;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.header__list-link:hover {
+  color: var(--color-purple-hover);
+
+}
+
+.header__list-link:active {
+  color: var(--color-purple-active);
+
+}
+
+.header__list-link:focus {
+  color: var(--color-lightpurple);
+
 }
 
 .header__button {

@@ -7,6 +7,11 @@
   border: none;
 }
 
+.form__fieldset--small {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .form__fieldset-item {
   display: flex;
   align-items: center;
@@ -155,6 +160,15 @@
   margin-bottom: 56px;
 }
 
+.form__input::placeholder {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.5;
+  color: #211e1e;
+}
+
 .form__input-select:last-of-type {
   width: 300px;
 }
@@ -169,7 +183,7 @@
 }
 
 .form__input-select input {
-  width: 100%;
+  height: 52px;
   padding: 12px 20px;
 }
 
@@ -213,6 +227,24 @@
 
 .form__input--tel:focus {
   border: 2px solid var(--color-main);
+}
+
+.form__input-arrow {
+  position: relative;
+}
+
+.form__input-arrow:before {
+  position: absolute;
+  content: "";
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: url(./assets/images/input-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21px;
+  height: 15px;
 }
 
 .form__button {

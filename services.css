@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .services__title {
@@ -12,6 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
+  padding-bottom: 70px;
 }
 
 .services__item {
@@ -28,6 +29,23 @@
 
 .services__link {
   display: inline-block;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.services__link:hover {
+  color: var(--color-purple-hover);
+
+}
+
+.services__link:active {
+  color: var(--color-purple-active);
+
+}
+
+.services__link:focus {
+  color: var(--color-lightpurple);
+
 }
 
 .services__img {

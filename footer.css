@@ -19,6 +19,8 @@
   
   text-decoration: none;
   color: var(--color-white);
+
+  transition: color 0.2s ease-in-out;
   }
 
 .address__link:before {
@@ -32,6 +34,21 @@
 
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.address__link:hover {
+  color: var(--color-purple-hover);
+
+}
+
+.address__link:active {
+  color: var(--color-purple-active);
+
+}
+
+.address__link:focus {
+  color: var(--color-lightpurple);
+
 }
 
 

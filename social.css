@@ -15,3 +15,15 @@
   color: var(--color-white);
   text-decoration: none;
 }
+
+.social__link:hover {
+  color: var(--color-main);
+}
+
+.social__link:active {
+  color: var( --color-light-hover);
+}
+
+.social__link:focus {
+  color: var(--color-main);
+}

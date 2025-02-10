@@ -10,4 +10,21 @@
 .author__email {
   font-size: 14px;
   color: var(--color-white);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.author__email:hover {
+  color: var(--color-purple-hover);
+
+}
+
+.author__email:active {
+  color: var(--color-purple-active);
+
+}
+
+.author__email:focus {
+  color: var(--color-lightpurple);
+
 }
