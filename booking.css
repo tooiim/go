@@ -57,10 +57,6 @@
   font-weight: 400;
 }
 
-.form__fieldset-buttons .form__input {
-  width: 0;
-}
-
 .form__fieldset-buttons {
   display: flex;
   align-items: center;
@@ -87,26 +83,26 @@
 
   cursor: pointer;
 
-  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
 }
 
 .booking__input-label:hover {
   border: 3px solid var(--color-purple-hover);
   background-color: #eadeed;
-
+  color: #000;
 }
 
 
 .booking__input-label:active {
   border: 3px solid #fff;
   background-color: var(--color-lightpurple);
-
-  color: var(--color-white);
+  color: #000;
 }
 
 .booking__input-label:focus {
   border: 3px solid var(--color-purple-active);
   background-color: #fff;
+  color: #000;
 }
 
 .form__legend-title {
@@ -180,11 +176,13 @@
 
 .form__input-select {
   position: relative;
+  padding-top: 2px;
 }
 
 .form__input-select input {
   height: 52px;
   padding: 12px 20px;
+  outline: 1px solid transparent;
 }
 
 .form__input-label--center {

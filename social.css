@@ -17,13 +17,14 @@
 }
 
 .social__link:hover {
-  color: var(--color-main);
+  color: var(--color-light-hover);
 }
 
 .social__link:active {
-  color: var( --color-light-hover);
+  color: var(--color-main);
 }
 
 .social__link:focus {
-  color: var(--color-main);
+  color: var(--color-light-hover);
+  outline: 1px solid var(--color-main);
 }
