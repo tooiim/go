@@ -62,15 +62,54 @@
 
 .halls__link:hover {
   color: var(--color-purple-hover);
-
 }
 
 .halls__link:active {
   color: var(--color-purple-active);
-
 }
 
 .halls__link:focus {
   color: var(--color-lightpurple);
+}
 
+@media (max-width: 1024px) {
+  .halls__item {
+    width: 432px;
+    height: 227px;
+  }
+  .halls__link {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 960px) {
+
+.halls__item {
+  width: 324px;
+  height: 200px;
+}
+.halls__link {
+  font-size: 40px;
+}
+}
+
+@media (max-width:690px) {
+  
+  .halls__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width: 375px) {
+
+  .halls__link {
+    font-size: 26px;
+  }
+
+  .halls__item {
+    width: 280px;
+    height: 168px;
+}
 }

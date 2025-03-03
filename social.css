@@ -1,10 +1,10 @@
 .social {
-  list-style: none;
+  display: flex;
+  gap: 26px;
 }
 
 .social__item {
-  display: inline-block;
-  margin-right: 26px;
+
 }
 
 .social__item:last-child {

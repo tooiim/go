@@ -2,7 +2,6 @@
   min-height: 825px;
 }
 
-
 .container-top {
   position: relative;
 
@@ -125,6 +124,7 @@ line-height: 1.2;
 
   background-image: url(./assets/images/down.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 97px;
   width: 97px;
 
@@ -144,3 +144,151 @@ line-height: 1.2;
   outline: 1px solid var(--color-main);
 }
 
+@media (max-width: 1200px) {
+
+  .container-top {
+    min-height: 583px;
+  }
+
+  .top__text {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .top__info {
+    margin-bottom: 80px;
+  }
+  
+  .top__info-item:first-of-type {
+    margin-right: 40px;
+  }
+  
+  .top__info-item-span:last-of-type {
+    font-size: 60px;
+  }
+  
+  .top__info-item-text {
+    font-size: 26px;
+  }
+  
+  .top {
+    min-height: 583px;
+  }
+  
+  .container-top::before {
+    width: 453px;
+    height: 520px;
+  }
+  
+  .top__button {
+    width: 296px;
+    height: 54px;
+    font-size: 22px;
+  }
+  
+  .top__element {
+    height: 67px;
+    width: 67px;
+  }
+  
+}
+
+@media (max-width: 960px) {
+
+  .container-top {
+    min-height: 537px;
+  }
+
+  .top__text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  
+  .top__info {
+    margin-bottom: 80px;
+  }
+  
+  .top__info-item:first-of-type {
+    margin-right: 40px;
+  }
+  
+  .top__info-item-span:last-of-type {
+    font-size: 40px;
+  }
+  
+  .top__info-item-text {
+    font-size: 16px;
+  }
+  
+  .top {
+    min-height: 537px;
+  }
+  
+  .container-top::before {
+    width: 409px;
+    height: 479px;
+  }
+  
+  .top__button {
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+  }
+  
+  .top__element {
+    display: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container-top {
+    min-height: 204px;
+  }
+
+  .container-top::before {
+    width: 309px;
+    height: 379px;
+
+    .top__text {
+      font-size: 10px;
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+    
+    .top__info {
+      margin-bottom: 30px;
+    }
+  
+    .top__info-item {
+      max-width: 65px;
+    }
+  
+    .top__info-item:first-of-type {
+      margin-right: 20px;
+    }
+    
+    .top__info-item-span:last-of-type {
+      font-size: 22px;
+    }
+    
+    .top__info-item-text {
+      font-size: 10px;
+    }
+    
+    .top {
+      min-height: 204px;
+    }
+    
+    .container-top::before {
+      width: 161px;
+      height: 179px;
+    }
+    
+    .top__button {
+      width: 107px;
+      height: 27px;
+      font-size: 10px;
+  }
+}
+}

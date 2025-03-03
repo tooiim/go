@@ -57,10 +57,15 @@
   font-weight: 400;
 }
 
+.form__fieldset-inputs {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .form__fieldset-buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 60px;
   margin-bottom: 60px;
 }
 
@@ -116,8 +121,10 @@
 }
 
 .form__input-group {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 300px 280px 300px;
+  column-gap: 50px;
+  margin-bottom: 40px;
 }
 
 .form__inputs-date-time {
@@ -127,13 +134,20 @@
   gap: 32px;
 }
 
-.form__inputs-wrapper {
-  width: 300px;
+
+.form__inputs-wrapper-one {
+  grid-column: 1 / 2;
+}
+.form__inputs-wrapper-two {
+  grid-column: 2 / 3;
+}
+
+.form__inputs-wrapper-three {
+  grid-column: 3 / 4;
 }
 
 .form__input-wrapper {
   margin-bottom: 36px;
-  width: 300px;
 }
 
 .form__input-wrapper input {
@@ -173,7 +187,6 @@
   width: 100%;
 }
 
-
 .form__input-select {
   position: relative;
   padding-top: 2px;
@@ -212,7 +225,6 @@
   width: 21px;
   height: 15px;
 }
-
 
 .form__input--small {
   width: 134px;
@@ -287,3 +299,227 @@
 .form__input:focus {
   outline: 1px solid var(--color-main);
 }
+
+@media (max-width: 1200px) {
+
+.form__fieldset-inputs {
+  max-width: 904px;
+}
+
+.form__input-group {
+  grid-template-columns: 300px 250px 250px;
+  column-gap: 50px;
+  margin-bottom: 40px;
+}
+
+.booking__input-label {
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.form__input-wrapper input {
+  height: 52px;
+  width: 250px;
+}
+
+.form__button {
+  width: 254px;
+  height: 50px;
+  font-size: 18px;
+
+}
+}
+
+@media (max-width: 960px) {
+
+  .form__fieldset-buttons {
+    gap: unset;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .booking__input-label {
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+  }
+  
+  .form__fieldset-group {
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  
+  .form__fieldset-group .form__fieldset {
+    flex-basis: 300px;
+    margin-bottom: 32px;
+  }
+  
+  .form__fieldset-inputs {
+    max-width: 688px;
+  }
+  
+  
+  .form__input-group {
+    grid-template-columns: 320px 300px;
+    grid-template-rows: 52px 162px;
+    justify-content: space-between;
+    row-gap: 42px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .form__input-wrapper input {
+    height: 52px;
+    width: 100%;
+  }
+  
+  .form__button {
+    width: 254px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .form__input-select:last-of-type {
+    width: unset;
+  }
+  
+  .form__inputs-date-time {
+    margin-top: 0;
+    
+    display: grid;
+    grid-template-columns: 134px 134px;
+    justify-content: space-between;
+    column-gap: 52px;
+  }
+  
+  .form__input-select-small {
+    margin-bottom: 0;
+  }
+  
+  .form__input-select {
+    padding-top: 0;
+  }
+  
+  .form__inputs-wrapper-one {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  
+    display: grid;
+    grid-template-columns: 280px 300px;
+    justify-content: space-between;
+  }
+  .form__inputs-wrapper-two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .form__inputs-wrapper-three {
+    grid-column: 2 /3;
+    grid-row: 2 /3;
+  }
+}
+
+@media (max-width:690px) {
+
+  .form__fieldset-buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .booking__input-label {
+    width: calc(50% - 10px);
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .form__fieldset-group {
+    justify-content: center;
+  }
+  
+  .form__fieldset-group .form__fieldset {
+    flex-basis: 100%;
+  }
+  
+  .form__input-group {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-rows: auto;
+    gap: 35px;
+  }
+  
+  .form__inputs-wrapper-one {
+    grid-column: 1;
+    grid-row: 1 / 2;
+  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 52px;
+    gap: 15px;
+    align-items: self-end;
+  }
+  
+  .form__input--small {
+    width: 100%;
+  }
+  
+  .form__inputs-date-time {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .form__input-select {
+    grid-column: 1/ 2 span;
+    grid-row: 2/ 3;
+  }
+  
+  .form__inputs-wrapper-two {
+    grid-column: 1;
+    grid-row: 2 / 3;
+  }
+  
+  .form__inputs-wrapper-three {
+    grid-column: 1;
+    grid-row: 3 / 4;
+  }
+  
+  .form__input-select-one {
+    grid-column: 1/ 2;
+  }
+  
+  .form__input-select-two {
+    grid-column: 2/ 3;
+  }
+  
+  .form__button {
+    width: 100%;
+  }
+  }
+
+  @media (max-width: 375px) {
+
+    .form__legend-title  {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .form__fieldset-buttons {
+      margin-bottom: 30px;
+    }
+    
+    .form__fieldset-group .form__legend {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .form__fieldset-group [type="radio"] {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    
+    .form__input::placeholder {
+      font-size: 14px;
+    }
+  }

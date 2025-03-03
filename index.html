@@ -9,7 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="./assets/images/icon.svg">
   <link rel="icon" type="image/png" href="./assets/images/logo.png">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
 </head>
 
 <body class="page">
@@ -19,6 +20,10 @@
     <div class="container">
 
       <nav class="header__nav nav">
+        <button class="header__menu menu" type="button">
+          <img src="./assets/images/menu.svg" alt="Menu" class="menu__img">
+        </button>
+
         <a href="#" class="header__logo">
           <img src="./assets/images/header-logo.svg" alt="Go Logo" class="header__logo-img">
         </a>
@@ -44,6 +49,8 @@
         <button type="button" class="header__button button">Заказать
           звонок</button>
       </nav>
+
+      
     </div>
   </header>
 
@@ -138,12 +145,14 @@
       </div>
     </section>
 
-       <section class="section booking" id="booking">
+    <section class="section booking" id="booking">
       <div class="container">
         <h2 class="section-title">Забронировать зал просто</h2>
 
         <form action="https://jsonplaceholder.typicode.com/posts"
           method="post" class="booking-form form">
+
+          <h3 class="form__legend-title">Выбери зал</h3>
 
           <fieldset class="form__fieldset form__fieldset-buttons">
 
@@ -232,15 +241,15 @@
 
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset-inputs">
             <legend class="form__legend-title">Выбири дату и время:</legend>
 
             <div class="form__input-group">
 
-              <div class="form__inputs-wrapper">
+              <div class="form__inputs-wrapper form__inputs-wrapper-one">
 
                 <div class="form__inputs-date-time">
-                  <div class="form__input-select form__input-select-small">
+                  <div class="form__input-select form__input-select-one form__input-select-small">
                     <label for="date" class="form__input-label form__input-label--center"></label>
 
                     <div class="form__input-arrow">
@@ -248,7 +257,7 @@
                     </div>
                   </div>
 
-                  <div class="form__input-select form__input-select-small">
+                  <div class="form__input-select form__input-select-two form__input-select-small">
                     <label for="time" class="form__input-label form__input-label--center"></label>
 
                     <div class="form__input-arrow">
@@ -267,7 +276,7 @@
 
               </div>
 
-              <div class="form__inputs-wrapper">
+              <div class="form__inputs-wrapper form__inputs-wrapper-two">
 
                 <div class="form__input-wrapper">
                   <label for="name-1" class="form__input-label form__input-label-small">Имя</label>
@@ -280,7 +289,7 @@
                 </div>
               </div>
 
-              <div class="form__inputs-wrapper">
+              <div class="form__inputs-wrapper form__inputs-wrapper-three">
 
                 <div class="form__input-wrapper">
                   <label for="tel" class="form__input-label form__input-label-small">Tелефон</label>
@@ -296,9 +305,8 @@
 
             </div>
 
+            <button type="submit"  class="form__button button" >Забронировать</button>
           </fieldset>
-
-          <button type="submit"  class="form__button button" >Забронировать</button>
 
         </form>
       </div>
@@ -310,20 +318,23 @@
 
       <h2 class="section-title">О нас</h2>
 
-      <div class="about__item about__item-photos">
-        <img class="about__image" src="./assets/images/photos.jpg" alt="Фотографии">
-      </div>
-
-      <div class="about__item about__item-descr">
-        <div class="about__description">
-          <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-  
-          <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+      <div class="about__inner">
+        <div class="about__item about__item-photos">
+          <img class="about__image" src="./assets/images/photos.jpg" alt="Фотографии">
         </div>
-  
+
+        <div class="about__item about__item-descr">
+          <div class="about__description">
+            <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+    
+            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+          </div>
+        </div>
+
+        <div class="about__blockquote">
           <blockquote class="blockquote">
             <p class="blockquote__quote quote">
-              GAME OVER &mdash; <br> это место незабываемых впечатлений
+              GAME OVER &mdash; <br class="quote-break"> это место незабываемых впечатлений
             </p>
           </blockquote>
       
@@ -331,7 +342,10 @@
             <img class="cite__img" src="./assets/images/quote.jpg" alt="Аркадий Абакшин">
             <figcaption class="cite__text">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
         </figure>
+        </div>
       </div>
+    
+      
       </div>
     </section>
 
@@ -407,7 +421,7 @@
 
 
             <p class="address__item">
-              <span class="address__link address-item-street">г. Москва ул. Аквамарина, 16</span>
+              <span class="address__link address-item-street">г. Москва ул. Усачёва, 29 к36</span>
             </p>
       
             <p class="address__item">
