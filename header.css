@@ -1,6 +1,5 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 50px;
 }
 
 .header__nav {
@@ -89,11 +88,6 @@
 
 
 @media (max-width: 1200px) {
-  
-  .header {
-    padding-bottom: 30px;
-  }
-
   .header__nav {
     gap: 79px;
   }
@@ -135,7 +129,6 @@
 
   .header {
     padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   .header__logo {

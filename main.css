@@ -1,11 +1,10 @@
 
 /* Main Styles */
 
-
 .container {
-  max-width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1300px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 0 auto;
 }
 
@@ -26,33 +25,22 @@ text-transform: uppercase;
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 904px;
+    max-width: 984px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  .section {
-    padding: 40px 0;
-  }
-
-  .page-section .section {
-    padding-top: 0;
-  }
-
-  .main-title {
-    font-size: 120px;
-    line-height: 1;
-    letter-spacing: -0.1em;
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 35px;
   }
 }
 
 @media (max-width: 960px) {
   .container {
     max-width: 688px;
-  }
-
-  .main-title {
-    font-size: 86px;
-    line-height: 1;
-    letter-spacing: -0.1em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .section-title {
@@ -66,10 +54,6 @@ text-transform: uppercase;
     max-width: 600px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .main-title {
-    font-size: 35px;
   }
 
   .section {
