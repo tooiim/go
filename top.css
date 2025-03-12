@@ -13,7 +13,7 @@
 .container-top:before {
   content: "";
   position: absolute;
-  right: 10px;
+  right: 60px;
   bottom: 0;
 
   background: url(./assets/images/cover.png);
@@ -151,6 +151,10 @@
     min-height: 583px;
   }
 
+  .container-top::before {
+    right: 40px;
+  }
+
   .section {
     padding: 40px 0;
   }
@@ -212,6 +216,10 @@
 
   .container-top {
     min-height: 537px;
+  }
+
+  .container-top::before {
+    right: 10px;
   }
 
   .section {

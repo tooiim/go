@@ -98,10 +98,21 @@
 
 @media (max-width: 960px) {
 
+  .halls__list {
+    gap: 20px;
+  }
+
 .halls__item {
   width: 324px;
   height: 200px;
+  margin-right: 0;
 }
+
+.halls__item--one,
+.halls__item--two {
+  margin-bottom: 0;
+}
+
 .halls__link {
   font-size: 40px;
 }
