@@ -15,7 +15,6 @@
 
 <body class="page">
 
-
   <header class="header">
     <div class="container">
 
@@ -46,7 +45,7 @@
           </li>
         </ul>
 
-        <button type="button" class="header__button button">Заказать звонок</button>
+        <button class="header__button button" type="button" id="call-button">Заказать звонок</button>
       </nav>
 
       
@@ -483,7 +482,42 @@
     </div>
 
   </footer>
+
+  <div id="overlay" class="overlay-hidden hidden"></div>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal__heading">
+        <button class="modal__close" id="modal-close" type="button">
+          <img src="./assets/images/modal-close.svg" alt="CLose" class="modal__img">
+        </button>
+      </div>
+      <div class="modal__body">
+
+        <h3 class="modal__title">Заказать звонок</h3>
+
+        <form class="modal-form">
+
+          <div class="form__input-wrapper modal-form__input-wrapper">
+            <label for="name-modal" class="form__input-label form__input-label-small modal-form__input-label">Имя</label>
+            <input type="text" name="name" id="name-modal" required class="form__input modal__input ">
+          </div>
+
+          <div class="form__input-wrapper">
+            <label for="modal-tel" class="form__input-label form__input-label-small">Tелефон</label>
+            <input type="tel" name="tel" id="modal-tel" class="form__input form__input--tel modal__input" required>
+          </div>
+
+          <button type="submit"  class="form__button button modal__button" >Позвонить мне</button>
+        </form>
+
+      </div>
+    </div>
   
+
+  
+  
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

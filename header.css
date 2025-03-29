@@ -117,7 +117,12 @@
 @media (max-width: 960px) {
 
   .header__list {
-    display: none;
+      /* display: flex;
+      flex-direction: column;
+      transform: translateY(120px);
+      position: relative;
+      z-index: 99999; */
+      display: none;
   }
 
   .header__menu {
