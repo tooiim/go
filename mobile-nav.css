@@ -1,9 +1,16 @@
 .mobile-nav {
-  display: none;
+  position: fixed;
+  z-index: 300;
 
-  text-align: center;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 60px;
+
+  text-align: center;
+
+  background-color: #1b1a1b;
+
+  display: none;
 }
 
 .mobile-nav.active {
@@ -45,6 +52,13 @@
   display: none;
 }
 
+@media (max-width: 600px) {
+  .mobile-nav__button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width:495px) {
   .mobile-nav__list {
     margin-bottom: 38px;
@@ -54,8 +68,4 @@
     font-size: 14px;
   }
 
-  .mobile-nav__button {
-    display: block;
-    margin: 0 auto;
-  }
 }
