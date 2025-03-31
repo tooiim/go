@@ -250,7 +250,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  background: url(./assets/images/input-arrow.svg);
+  background: url(../assets/images/input-arrow.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 21px;

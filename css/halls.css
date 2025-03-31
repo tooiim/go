@@ -18,23 +18,23 @@
 }
 
 .halls__item--one {
-  background-image: url(./assets/images/halls/1.jpg);
+  background-image: url(../assets/images/halls/1.jpg);
   object-position: left top;
   margin-bottom: 20px;
 }
 
 .halls__item--two {
-  background-image: url(./assets/images/halls/2.jpg);
+  background-image: url(../assets/images/halls/2.jpg);
   object-position: right top;
   margin-bottom: 20px;
   margin-right: 0;
 }
 .halls__item--tree {
-  background-image: url(./assets/images/halls/3.jpg);
+  background-image: url(../assets/images/halls/3.jpg);
   object-position: left bottom;
 }
 .halls__item--four {
-  background-image: url(./assets/images/halls/4.jpg);
+  background-image: url(../assets/images/halls/4.jpg);
   object-position: right bottom;
   margin-right: 0;
 }
