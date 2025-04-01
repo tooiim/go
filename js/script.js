@@ -62,13 +62,13 @@ $('.faq__list').accordion({
 });
 
 
-const map = L.map('map').setView([55.755819, 37.617644], 10);
+const map = L.map('map').setView([55.723151, 37.565021], 10);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([55.755819, 37.617644]).addTo(map)
-    .bindPopup('55.755819, 37.617644')
+L.marker([55.723151, 37.565021]).addTo(map)
+    .bindPopup('г. Москва ул. Усачёва, 29 к3')
     .openPopup();
 
