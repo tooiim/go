@@ -14,6 +14,11 @@
   justify-content: space-between;
 }
 
+#map {
+  width: 600px;
+  height: 274px;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -22,7 +27,7 @@
     margin-bottom: 90px;
   }
   
-  .map {
+  #map {
     max-width: 542px;
     height: 274px;
   }

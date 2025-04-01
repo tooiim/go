@@ -8,6 +8,8 @@
 
   <link rel="icon" type="image/svg+xml" href="./assets/images/icon.svg">
   <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -412,11 +414,26 @@
       <h2 class="section-title">Частые вопросы</h2>
 
       <ul class="faq__list">
-        <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-        <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-        <li class="faq__item">Какая комната самая популярная?</li>
-        <li class="faq__item">Как получить VIP карту?</li>
-        <li class="faq__item">Какая комната самая популярная?</li>
+        <li class="faq__item">
+          <h3 class="faq__button"><span class="faq__title">Можно ли забронировать комнату онлайн?</span></h3>
+          <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <a class="faq__tel" href="tel:+79999584838">8 (999) 958 - 48 - 38</a></p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__button"><span class="faq__title">Могут ли мне вернуть деньги за бронь?</span></h3>
+          <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <a class="faq__tel" href="tel:+79999584838">8 (999) 958 - 48 - 38</a></p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__button"><span class="faq__title">Какая комната самая популярная?</span></h3>
+          <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <a class="faq__tel" href="tel:+79999584838">8 (999) 958 - 48 - 38</a></p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__button"><span class="faq__title">Как получить VIP карту?</span></h3>
+          <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <a class="faq__tel" href="tel:+79999584838">8 (999) 958 - 48 - 38</a></p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__button"><span class="faq__title">Какая комната самая популярная?</span></h3>
+          <p class="faq__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <a class="faq__tel" href="tel:+79999584838">8 (999) 958 - 48 - 38</a></p>
+        </li>
       </ul>
 
       </div>
@@ -436,7 +453,8 @@
 
 
             <p class="address__item">
-              <a class="address__link address-item-street" href="#">г. Москва ул. Усачёва, 29 к36</a>
+              <a class="address__link address-item-street" href="#">г. Москва
+                ул. Аквамарина, 16</a>
             </p>
       
             <p class="address__item">
@@ -485,9 +503,7 @@
           </ul>
         </div>
         
-        <div class="map">
-          <img class="map__img" src="./assets/images/map.jpg" alt="Map">
-        </div>
+        <div id="map"></div>
       </div>
 
       <div class="contacts__copyright copyright">
@@ -532,10 +548,9 @@
       </div>
     </div>
   
-
-  
   
     <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
