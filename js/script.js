@@ -52,14 +52,31 @@ $(document).ready(function() {
     }
   });
 
+  $('.faq__list').accordion({
+    active: true,
+    collapsible: true,
+    heightStyle: "content",
+		icons: {
+			header: 'accord-icon',
+			activeHeader: 'accord-icon accord-icon--open',
+		}
+  });
+
+//   $('.accord-icon').each(function(index) {
+//     if ($(this).hasClass('accord-icon--open')) {
+      
+//         if (index % 2 === 0) { 
+//             $(this).css('background-image', 'url("./../assets/images/faq-item-purple-close.svg")');
+//         } else { 
+//             $(this).css('background-image', 'url("./../assets/images/faq-item-white-active.svg")');
+//         }
+//     }
+// });
+
 });
 
 
-$('.faq__list').accordion({
-  active: true,
-  collapsible: true,
-  heightStyle: 'content',
-});
+
 
 
 const map = L.map('map').setView([55.723151, 37.565021], 10);

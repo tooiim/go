@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.faq__item:after {
+/* .faq__item:after {
 position: absolute;
 top: 20px;
 right: 70px;
@@ -30,6 +30,30 @@ width: 46px;
 height: 46px;
 
 transition: background-image 0.2s ease-in-out;
+cursor: pointer;
+} */
+
+.accord-icon {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+
+	display: block;
+	width: 46px;
+	height: 46px;
+	background-image: url("./../assets/images/open.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	transition: background-image 0.2s ease-in-out;
+}
+
+.accord-icon--open {
+	display: block;
+	width: 46px;
+	height: 46px;
+	background-image: url("./../assets/images/close-white.svg");
 }
 
 .faq__item:nth-child(2n) {
@@ -43,28 +67,33 @@ transition: background-image 0.2s ease-in-out;
   transition: background-image 0.2s ease-in-out;
   }
 
-.faq__item:nth-child(odd):after {
+.faq__item:nth-child(odd) .accord-icon {
 background-image: url(../assets/images/open-purple.svg);
 
 }
 
-.faq__item:nth-child(even):after {
-background-image: url(../assets/images/open.svg);
+.faq__item:nth-child(odd) .accord-icon--open {
+  background-image: url(../assets/images/close-purple.svg);
+  
+  }
+
+.faq__item:nth-child(even) .accord-icon--open  {
+background-image: url(../assets/images/close-white.svg);
 }
 
-.faq__item:nth-child(2n):hover::after {
+.faq__item:nth-child(2n):hover .accord-icon {
   background-image: url(../assets/images/faq-item-white-hover.svg);
 }
 
-.faq__item:nth-child(2n):active::after {
+.faq__item:nth-child(2n):active .accord-icon {
   background-image: url(../assets/images/faq-item-white-active.svg);
 }
 
-.faq__item:nth-child(2n+1):hover::after {
+.faq__item:nth-child(2n+1):hover .accord-icon {
   background-image: url(../assets/images/faq-item-purple-hover.svg);
 }
 
-.faq__item:nth-child(2n+1):active::after {
+.faq__item:nth-child(2n+1):active  .accord-icon {
   background-image: url(../assets/images/faq-item-purple-close.svg);
 }
 
