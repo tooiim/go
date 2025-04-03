@@ -17,22 +17,6 @@
   cursor: pointer;
 }
 
-/* .faq__item:after {
-position: absolute;
-top: 20px;
-right: 70px;
-
-content: '';
-display: block;
-background-repeat: no-repeat;
-background-size: cover;
-width: 46px; 
-height: 46px;
-
-transition: background-image 0.2s ease-in-out;
-cursor: pointer;
-} */
-
 .accord-icon {
   position: absolute;
   top: 20px;
