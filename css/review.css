@@ -2,13 +2,18 @@
   margin-bottom: 50px;
 }
 
+.review__title {
+  margin-bottom: 40px;
+}
+
 .review__list {
   max-width: 980px;
   margin: 0 auto;
 }
 
-.review__item {
+.review__item.swiper-slide {
   display: flex;
+  justify-content: center;
   }
 
 .review__item:not(:last-child) {
@@ -17,8 +22,10 @@
 
 .review__image {
   position: relative;
-  display: block;
-  margin-right: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .review__img {
@@ -52,7 +59,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
-  text-align: center;
 }
 
 .review__text {
@@ -60,6 +66,61 @@
   max-width: 540px;
   vertical-align: top;
   padding-top: 50px;
+}
+
+/* Slider */
+
+.slider__wrapper {
+	max-width: 1180px;
+	position: relative;
+	padding: 0 40px;
+}
+
+.swiper {
+	max-width: 980px;
+}
+
+.slider-button {
+	position: absolute;
+	
+	color: var(--color-purple);
+
+	transition: all 0.5s ease-in;
+}
+
+.slider-button:hover {
+	color: var(--color-lightpurple);
+}
+
+.slider-button:focus-visible {
+	outline-color: var(--color-purple-active);
+}
+
+.slider-button:active {
+	color: var(--color-purple-active);
+}
+
+.button-prev {
+	left: 0;
+}
+
+.button-next {
+	right: 0;
+	rotate: 180deg;
+}
+
+.slider-button {
+  position: absolute;
+	top: calc(50% - 33px);
+	z-index: 10;
+
+	width: 34px;
+	height: 66px;
+
+	overflow: auto;
+	margin: auto;
+	
+
 }
 
 @media (max-width: 1200px) {
@@ -89,6 +150,12 @@
   
   .review__name  {
     font-size: 18px;
+  }
+
+  .slider-button.button-prev,
+  .slider-button.button-next {
+    width: 22px;
+    height: 60px;
   }
 }
 
@@ -123,6 +190,34 @@
   }
 }
 
+@media (max-width: 690px) {
+  .review__item.swiper-slide {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .review__name {
+    text-align: center;
+  }
+
+  .review__item .review__image {
+    margin-right: 0;
+  }
+
+  .slider-button {
+    top: 13px;
+  }
+
+  .slider-button.button-prev {
+    left: 145px;
+  }
+
+  .slider-button.button-next {
+    right: 145px;
+  }
+  
+}
+
 @media (max-width: 600px)  {
 
   .review__item {
@@ -155,4 +250,6 @@
     padding-top: 15px;
     font-size: 12px;
   }
+
+  
 }

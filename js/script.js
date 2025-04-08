@@ -62,21 +62,63 @@ $(document).ready(function() {
 		}
   });
 
-//   $('.accord-icon').each(function(index) {
-//     if ($(this).hasClass('accord-icon--open')) {
-      
-//         if (index % 2 === 0) { 
-//             $(this).css('background-image', 'url("./../assets/images/faq-item-purple-close.svg")');
-//         } else { 
-//             $(this).css('background-image', 'url("./../assets/images/faq-item-white-active.svg")');
-//         }
-//     }
-// });
+  $('#booking-form').on('submit', function(event) {
+    event.preventDefault(); // предотвращаем стандартное поведение отправки формы
+
+    let formData = $(this).serialize(); // собираем данные формы
+
+    $.ajax({
+      url: 'https://postmanecho.com/post',
+      type: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify(formData),
+      success: function(response) {
+          console.log('Успешно отправлено:', response);
+          alert('Данные успешно отправлены!');
+      },
+      error: function(xhr, status, error) {
+          console.error('Ошибка:', error);
+          alert('Произошла ошибка при отправке данных.');
+      }
+  });
+});
+
+$('.modal-form').on('submit', function(e) {
+  e.preventDefault(); // Предотвращаем перезагрузку страницы
+
+  // Собираем данные формы
+  let formData = {
+      name: $('#name-modal').val(),
+      tel: $('#modal-tel').val()
+  };
+
+  // Отправляем AJAX-запрос
+  $.ajax({
+      url: 'https://postmanecho.com/post',
+      type: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify(formData),
+      success: function(response) {
+          console.log('Успешно отправлено:', response);
+          alert('Данные успешно отправлены!');
+      },
+      error: function(xhr, status, error) {
+          console.error('Ошибка:', error);
+          alert('Произошла ошибка при отправке данных.');
+      }
+  });
+});
 
 });
 
-
-
+new Swiper('.swiper', {
+	loop: true,
+  
+	navigation: {
+		nextEl: '.button-next',
+		prevEl: '.button-prev',
+	},
+});
 
 
 const map = L.map('map').setView([55.723151, 37.565021], 10);
