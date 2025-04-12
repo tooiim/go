@@ -165,8 +165,7 @@
       <div class="container">
         <h2 class="section-title">Забронировать зал просто</h2>
 
-        <form action="https://postmanecho.com/post"
-          method="post" class="booking-form form">
+        <form class="booking-form form" action="https://postmanecho.com/post" method="POST">
 
           <h3 class="form__legend-title">Выбери зал</h3>
 
@@ -522,7 +521,7 @@
           </ul>
         </div>
         
-        <div id="map"></div>
+        <div id="map" class="map"></div>
       </div>
 
       <div class="contacts__copyright copyright">
@@ -549,7 +548,7 @@
 
         <h3 class="modal__title">Заказать звонок</h3>
 
-        <form class="modal-form">
+        <form class="modal-form" action="https://postman-echo.com/post" method="POST">
 
           <div class="form__input-wrapper modal-form__input-wrapper">
             <label for="name-modal" class="form__input-label form__input-label-small modal-form__input-label">Имя</label>

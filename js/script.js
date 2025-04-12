@@ -62,53 +62,6 @@ $(document).ready(function() {
 		}
   });
 
-  $('#booking-form').on('submit', function(event) {
-    event.preventDefault(); // предотвращаем стандартное поведение отправки формы
-
-    let formData = $(this).serialize(); // собираем данные формы
-
-    $.ajax({
-      url: 'https://postmanecho.com/post',
-      type: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify(formData),
-      success: function(response) {
-          console.log('Успешно отправлено:', response);
-          alert('Данные успешно отправлены!');
-      },
-      error: function(xhr, status, error) {
-          console.error('Ошибка:', error);
-          alert('Произошла ошибка при отправке данных.');
-      }
-  });
-});
-
-$('.modal-form').on('submit', function(e) {
-  e.preventDefault(); // Предотвращаем перезагрузку страницы
-
-  // Собираем данные формы
-  let formData = {
-      name: $('#name-modal').val(),
-      tel: $('#modal-tel').val()
-  };
-
-  // Отправляем AJAX-запрос
-  $.ajax({
-      url: 'https://postmanecho.com/post',
-      type: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify(formData),
-      success: function(response) {
-          console.log('Успешно отправлено:', response);
-          alert('Данные успешно отправлены!');
-      },
-      error: function(xhr, status, error) {
-          console.error('Ошибка:', error);
-          alert('Произошла ошибка при отправке данных.');
-      }
-  });
-});
-
 });
 
 new Swiper('.swiper', {
@@ -131,3 +84,39 @@ L.marker([55.723151, 37.565021]).addTo(map)
     .bindPopup('г. Москва ул. Усачёва, 29 к3')
     .openPopup();
 
+
+    const formTitle = $('.form__legend-title');
+    $('.booking-form').submit(function (event) {
+      event.preventDefault();
+      
+      $.ajax({
+        url: 'https://postman-echo.com/post',
+        type: 'POST',
+        data: $(this).serialize(),
+        success: function(data) {
+          formTitle.text('Спасибо ваша заявка принята')
+          $('.booking-form').slideUp(300);
+        },
+        error() {
+          formTitle.text('Что то пошло не так попробуйте позже')
+        }
+      })
+    });
+
+    const modalTitle = $('.modal__title');
+    $('.modal-form').submit(function (event) {
+      event.preventDefault();
+      
+      $.ajax({
+        url: 'https://postman-echo.com/post',
+        type: 'POST',
+        data: $(this).serialize(),
+        success: function(data) {
+          formTitle.text('Спасибо ваша заявка принята')
+          $('.modal-form').slideUp(300);
+        },
+        error() {
+          formTitle.text('Что то пошло не так попробуйте позже')
+        }
+      })
+    });

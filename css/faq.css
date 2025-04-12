@@ -12,7 +12,7 @@
   font-size: 24px;
   
   margin-bottom: 20px;
-  line-height: 46px;
+  line-height: 1;
 
   cursor: pointer;
 }
@@ -82,13 +82,15 @@ background-image: url(../assets/images/close-white.svg);
 }
 
 .faq__button {
-  padding: 20px 70px;
+  padding: 30px 70px;
+  height: 87px;
+  line-height: 1;
 }
 
 .faq__title {
 font-weight: 700;
 font-size: 24px;
-line-height: 1.16667;
+line-height: 1;
 }
 
 .faq__text {
@@ -107,15 +109,14 @@ color: #000;
 
 @media (max-width: 1024px) {
 
+  .faq {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
   .faq__item {
     height: 70px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     font-size: 20px;
-    padding: 12px 25px;
   }
 
   .faq__item:nth-child(2n) {
@@ -125,31 +126,99 @@ color: #000;
 
   .faq__item:nth-child(even):after {
     background-image: url(../assets/images/open-purple.svg);
+
 }
+
+.faq__item:nth-child(even) .accord-icon--open  {
+  background-image: url(../assets/images/open-purple.svg);
+  }
+
+  .faq__item:nth-child(even) .accord-icon {
+    background-image: url(../assets/images/open-purple.svg);
+  }
+
+  .faq__item:nth-child(even):hover .accord-icon{
+    background-image: url(../assets/images/faq-item-purple-hover.svg);
+  }
 
 .faq__item:last-child {
     display: none;
 }
+
+.faq__button {
+  padding: 23px 25px;
+  height: 70px;
 }
 
-@media (max-width: 768px) {
+.accord-icon  {
+  top: 12px;
+  right: 25px;
+}
+
+.faq__text {
+  position: relative;
+  z-index: 100;
+  padding: 57px 70px 100px 30px;
+}
+
+}
+
+@media (max-width: 690px) {
   .faq__item {
    font-size: 18px;
-   padding: 12px 65px;
  }
+
+ .faq__title {
+  font-size: 18px;
+ }
+
+ .faq__button {
+  padding: 23px 54px;
+  height: 70px;
+ }
+
+  .faq__text {
+    font-size: 18px;
+    padding: 55px;
+  }
 }
+
 
 @media (max-width: 600px)  {
 
   .faq__item {
    font-size: 12px;
-   height: 46px;
-   padding: 15px 10px;
-   line-height: 1.2;
+   height: min-content;
   }
  
   .faq__item:after {
    width: 30px;
    height: 30px;
+  }
+
+  .faq__title {
+    font-size: 12px;
+    max-width: 210px;
+    line-height: 1.3;
+  }
+
+  .faq__button {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    padding: 7px 10px;
+  }
+
+  .accord-icon {
+    top: 7px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq__text {
+    font-size: 12px;
+    padding: 10px;
+
   }
 } 

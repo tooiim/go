@@ -59,6 +59,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
+  text-align: center;
 }
 
 .review__text {
@@ -156,6 +157,7 @@
   .slider-button.button-next {
     width: 22px;
     height: 60px;
+    top: calc(50% - 70px);
   }
 }
 
@@ -215,6 +217,11 @@
   .slider-button.button-next {
     right: 145px;
   }
+
+  .slider-button.button-prev,
+  .slider-button.button-next {
+    top: 10px;
+  }
   
 }
 
@@ -223,8 +230,6 @@
   .review__item {
     flex-direction: column;
     align-items: center;
-  
-    max-width: 280px;
     margin: 0 auto;
   }
   
@@ -244,12 +249,35 @@
   .review__image:before {
     width: 86px;
     height: 86px;
+    margin: 0 auto;
   }
-  
+
+  .review__image::before {
+    left: 9px;
+  }
+
   .review__text  {
     padding-top: 15px;
     font-size: 12px;
   }
 
+  .slider-button.button-prev {
+    left: 80px;
+  }
+
+  .slider-button.button-next {
+    right: 80px;
+  }
+
   
+}
+
+@media (max-width: 425px) {
+  .slider-button.button-prev {
+    left: 70px;
+  }
+
+  .slider-button.button-next {
+    right: 70px;
+  }
 }
